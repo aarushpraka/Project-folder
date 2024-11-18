@@ -1,0 +1,221 @@
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    font-family: Arial, sans-serif;
+}
+
+
+/* Container Styling */
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    /* Slightly more opaque for consistency */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    /* Default to a percentage width for smaller screens */
+    max-width: 400px;
+    /* Limit max width for larger screens */
+}
+
+
+/* Logo Styling */
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+
+/* Form Styling */
+
+h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #333;
+    /* Consistent color */
+}
+
+p {
+    margin: 10px 0;
+    color: #666;
+    /* Consistent color */
+    font-size: 1rem;
+    /* Consistent font size */
+}
+
+
+/* Input Fields */
+
+.input-field {
+    width: calc(100% - 1rem);
+    /* Full width minus right margin */
+    padding: 1rem;
+    /* Use rem for padding */
+    margin: 0.5rem 0;
+    /* Only top and bottom margins */
+    border: 1px solid #ccc;
+    /* Consistent border */
+    border-radius: 5px;
+    font-size: 1rem;
+    /* Consistent font size */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in total width */
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    padding: 10px;
+    /* Consistent padding */
+}
+
+
+/* Button Styling */
+
+.btn {
+    width: 100%;
+    /* Full width of the container */
+    padding: 1rem;
+    /* Consistent padding */
+    background-color: #00796b;
+    /* Primary button color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    /* Consistent font size */
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #004d40;
+    /* Darker shade on hover */
+}
+
+button:disabled {
+    background-color: #d6d6d6;
+    /* Disabled button color */
+    cursor: not-allowed;
+}
+
+
+/* Error Message Styling */
+
+.error {
+    color: red;
+    /* Consistent error color */
+    font-size: 14px;
+    /* Consistent font size */
+    display: none;
+    /* Initially hidden */
+}
+
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        /* Reduce padding */
+        margin-left: 15px;
+        /* Consistent margin */
+        margin-right: 15px;
+        /* Consistent margin */
+    }
+    h2 {
+        font-size: 1.5rem;
+        /* Smaller heading size */
+    }
+    p {
+        font-size: 0.875rem;
+        /* Smaller paragraph size */
+    }
+    .input-field,
+    .btn {
+        padding: 0.75rem;
+        /* Adjust padding */
+        font-size: 0.875rem;
+        /* Smaller font size */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        /* Moderate padding */
+    }
+    h2 {
+        font-size: 1.75rem;
+        /* Moderate heading size */
+    }
+    p {
+        font-size: 1rem;
+        /* Moderate paragraph size */
+    }
+    .input-field,
+    .btn {
+        padding: 0.875rem;
+        /* Adjust padding */
+        font-size: 1rem;
+        /* Moderate font size */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 30px;
+        /* Increase padding */
+    }
+    h2 {
+        font-size: 2rem;
+        /* Larger heading size */
+    }
+    p {
+        font-size: 1rem;
+        /* Maintain paragraph size */
+    }
+    .input-field,
+    .btn {
+        padding: 1rem;
+        /* Maintain padding */
+        font-size: 1rem;
+        /* Maintain font size */
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        padding: 40px;
+        /* Full padding for larger screens */
+    }
+    h2 {
+        font-size: 2rem;
+        /* Default heading size */
+    }
+    p {
+        font-size: 1rem;
+        /* Default paragraph size */
+    }
+    .input-field,
+    .btn {
+        padding: 1rem;
+        /* Default padding */
+        font-size: 1rem;
+        /* Default font size */
+    }
+}

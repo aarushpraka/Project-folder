@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Chat Application</h1>
+    </header>
+
+    <main>
+        <div class="chat-contacts">
+            <h2>Contacts</h2>
+            <ul class="contact-list">
+                <li class="contact">
+                    <img src="https://via.placeholder.com/50" alt="Contact Photo">
+                    <div class="contact-info">
+                        <h3>John Doe</h3>
+                        <p>Online</p>
+                    </div>
+                </li>
+                <li class="contact">
+                    <img src="https://via.placeholder.com/50" alt="Contact Photo">
+                    <div class="contact-info">
+                        <h3>Jane Smith</h3>
+                        <p>Offline</p>
+                    </div>
+                </li>
+                <!-- Add more contacts as needed -->
+            </ul>
+        </div>
+
+        <div class="chat-window">
+            <div class="header">
+                <img src="https://via.placeholder.com/40" alt="User Photo">
+                <div class="header-info">
+                    <h3>John Doe</h3>
+                    <div class="call-options">
+                        <button class="voice-call" aria-label="Voice Call">
+                            <i class="fas fa-phone-alt"></i>
+                        </button>
+                        <button class="video-call" aria-label="Video Call">
+                            <i class="fas fa-video"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="messages">
+                <div class="message">
+                    <img src="https://via.placeholder.com/40" alt="User Photo">
+                    <p>Hello! How are you?</p>
+                </div>
+                <div class="message self">
+                    <p>I'm good, thanks! And you?</p>
+                </div>
+                <!-- Add more messages as needed -->
+            </div>
+            <div class="message-input">
+                <input type="text" placeholder="Type a message...">
+                <button class="send-button" aria-label="Send Message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="JAva/script.js"></script>
+</body>
+
+</html>

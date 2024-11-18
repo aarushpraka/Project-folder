@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    /* Default to a percentage width for smaller screens */
+    max-width: 400px;
+    /* Limit max width for larger screens */
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 2rem;
+    /* Use rem for scalable font size */
+    margin: 10px 0;
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 1rem;
+    /* Use rem for scalable font size */
+}
+
+.input-field {
+    width: calc(100% - 1rem);
+    /* Full width minus right margin */
+    padding: 1rem;
+    /* Use rem for padding */
+    margin: 0.5rem 0 0.5rem 0;
+    /* Only top and bottom margins */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    /* Use rem for scalable font size */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in total width */
+}
+
+.btn {
+    width: 100%;
+    /* Full width of the container */
+    padding: 1rem;
+    /* Use rem for padding */
+    background-color: #00796b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    /* Use rem for scalable font size */
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #004d40;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+
+
+/* Media Queries for Responsiveness */
+
+
+/* Smartphones (Android & iOS) */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        /* Reduce padding */
+    }
+    h2 {
+        font-size: 1.5rem;
+        /* Smaller heading size */
+    }
+    p {
+        font-size: 0.875rem;
+        /* Smaller paragraph size */
+    }
+    .input-field,
+    .btn {
+        padding: 0.75rem;
+        /* Adjust padding */
+        font-size: 0.875rem;
+        /* Smaller font size */
+    }
+}
+
+
+/* Tablets */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+        /* Moderate padding */
+    }
+    h2 {
+        font-size: 1.75rem;
+        /* Moderate heading size */
+    }
+    p {
+        font-size: 1rem;
+        /* Moderate paragraph size */
+    }
+    .input-field,
+    .btn {
+        padding: 0.875rem;
+        /* Adjust padding */
+        font-size: 1rem;
+        /* Moderate font size */
+    }
+}
+
+
+/* Laptops */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .login-container {
+        padding: 30px;
+        /* Increase padding */
+    }
+    h2 {
+        font-size: 2rem;
+        /* Larger heading size */
+    }
+    p {
+        font-size: 1rem;
+        /* Maintain paragraph size */
+    }
+    .input-field,
+    .btn {
+        padding: 1rem;
+        /* Maintain padding */
+        font-size: 1rem;
+        /* Maintain font size */
+    }
+}
+
+
+/* Desktops */
+
+@media (min-width: 1025px) {
+    .login-container {
+        padding: 40px;
+        /* Full padding for larger screens */
+    }
+    h2 {
+        font-size: 2rem;
+        /* Default heading size */
+    }
+    p {
+        font-size: 1rem;
+        /* Default paragraph size */
+    }
+    .input-field,
+    .btn {
+        padding: 1rem;
+        /* Default padding */
+        font-size: 1rem;
+        /* Default font size */
+    }
+}

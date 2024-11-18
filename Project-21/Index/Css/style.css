@@ -1,0 +1,193 @@
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(0, 0, 50, 0.9), rgba(0, 128, 255, 0.9)), url('https://example.com/hero-bg.jpg') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.hero .title {
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero .subtitle {
+    font-size: 1.5em;
+    margin-top: 20px;
+    opacity: 0.8;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.device-animation {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    animation: bounce 1s infinite;
+}
+
+.device {
+    width: 120px;
+    margin: 0 15px;
+    animation: slideIn 2s ease-in-out;
+}
+
+.phone {
+    animation: rotatePhone 4s infinite linear;
+}
+
+.tablet {
+    animation: rotateTablet 5s infinite linear;
+}
+
+.laptop {
+    animation: rotateLaptop 6s infinite linear;
+}
+
+.desktop {
+    animation: rotateDesktop 7s infinite linear;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #00ffff;
+    transform: scale(1.1);
+}
+
+
+/* Parallax Section */
+
+.features {
+    position: relative;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 100px 20px;
+    background-position: center;
+}
+
+#parallax1 {
+    background-image: url('https://example.com/secure-bg.jpg');
+}
+
+#parallax2 {
+    background-image: url('https://example.com/mobile-bg.jpg');
+}
+
+#parallax3 {
+    background-image: url('https://example.com/global-bg.jpg');
+}
+
+.feature-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.feature-item i {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+
+/* Testimonials */
+
+.testimonials {
+    background: #1a1a1a;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.testimonial p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+
+/* Footer CTA */
+
+.cta-footer {
+    background: linear-gradient(135deg, #0052cc, #00aaff);
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.cta-footer h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta-footer .cta-button {
+    background: #fff;
+    color: #0052cc;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2em;
+}
